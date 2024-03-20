@@ -1,0 +1,25 @@
+.myTodo{
+    display: flex;
+    justify-content: center;
+}
+.filter{
+    border-radius: 20px;
+}
+.card-group{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+/* {edit && <input type="text" id="todo-title"  className="todo-title" value={title} onChange={e=>setTitle(e.target.value)} placeholder="todo-title" autoFocus></input>}
+
+      {edit && <input type="text" id="todo-description"  className="todo-description" value={description} onChange={e=>setDescription(e.target.value)} placeholder="todo-description"></input>}
+        
+        {edit && <button onClick={()=>{
+           handleEdit(item.id,title,description)
+          // setEdit(!edit)
+          console.log("button clicked");
+        }}>Save</button>}
+
+        {!edit && <span>{title}</span>}
+        {!edit && <span>{description}</span>} */
