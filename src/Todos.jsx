@@ -9,7 +9,7 @@ const Todos = ({addTodoData,title,setTitle,description,setDescription}) => {
     return (
         <div>
             <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-3">
               <input
                 type="text"
                 className="form-control"
@@ -20,7 +20,7 @@ const Todos = ({addTodoData,title,setTitle,description,setDescription}) => {
               />
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-3">
               <input
                 type="text"
                 className="form-control"
@@ -30,7 +30,7 @@ const Todos = ({addTodoData,title,setTitle,description,setDescription}) => {
                 onChange={(e)=> setDescription(e.target.value)}
               />
             </div>
-            <div className="col-auto">
+            <div className="col-auto mb-3">
               <button
                 type="submit"
                 className="btn btn-primary"
