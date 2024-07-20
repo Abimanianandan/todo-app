@@ -7,6 +7,8 @@ const App = () => {
   const [cart, setCart] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [titleError, setTitleError] = useState('');
+  const [descriptionError, setDescriptionError] = useState('');
   const [view, setView] = useState("all");
   const [filteredTodo, setFilteredtodo] = useState([]);
   const [completed, setCompleted] = useState(false);
@@ -26,7 +28,6 @@ const App = () => {
     }
     else {
       console.log(editId);
-      // Editing an existing todo
       const updatedCart = cart.map(item => {
         if (item.id === editId) {
           return { ...item, title: newTitle, description: newDescription };
@@ -34,7 +35,7 @@ const App = () => {
           return item;
         }
       });
-      console.log(updatedCart); // Check the updated cart
+      console.log(updatedCart); 
       setCart(updatedCart);
       setEdit(false)
     }
@@ -89,6 +90,10 @@ const App = () => {
               setTitle={setTitle}
               description={description}
               setDescription={setDescription}
+              titleError={titleError}
+              setTitleError={setTitleError}
+              descriptionError={descriptionError}
+              setDescriptionError={setDescriptionError}
               view={view}
               completed={completed}
               setCompleted={setCompleted}
